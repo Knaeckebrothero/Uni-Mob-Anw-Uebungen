@@ -1,0 +1,19 @@
+<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" (click)="toggleNavbar()"></mat-icon>
+
+<main>
+    <nav>
+        <h1>Dev'Coffee</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card" *ngFor="let coffee of coffees">
+            <img class="card--avatar" [src]="coffee.image" />
+            <h1 class="card--title">{{ coffee.name }}</h1>
+            <a class="card--link" href="#">Taste</a>
+        </div>
+    </div>
+</main>
