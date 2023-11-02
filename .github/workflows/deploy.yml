@@ -23,11 +23,11 @@ jobs:
       run: npm install -g @angular/cli
 
     - name: Build
-      run: ng build --configuration production --base-href /ai-assistant-frontend/
+      run: ng build --configuration production
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         branch: gh-pages
-        folder: dist/ai-assistant-frontend
+        folder: dist/University-MobApp
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
