@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1698947335688,
+  "index": "/University-MobApp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/University-MobApp/favicon.ico",
+        "/University-MobApp/index.html",
+        "/University-MobApp/main.943aa056ad44db09.js",
+        "/University-MobApp/manifest.webmanifest",
+        "/University-MobApp/polyfills.942245ca16d97e7c.js",
+        "/University-MobApp/runtime.cac85a30844ca736.js",
+        "/University-MobApp/styles.ef46db3751d8e999.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/University-MobApp/assets/icons/icon-128x128.png",
+        "/University-MobApp/assets/icons/icon-144x144.png",
+        "/University-MobApp/assets/icons/icon-152x152.png",
+        "/University-MobApp/assets/icons/icon-192x192.png",
+        "/University-MobApp/assets/icons/icon-384x384.png",
+        "/University-MobApp/assets/icons/icon-512x512.png",
+        "/University-MobApp/assets/icons/icon-72x72.png",
+        "/University-MobApp/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/University-MobApp/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/University-MobApp/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/University-MobApp/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/University-MobApp/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/University-MobApp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/University-MobApp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/University-MobApp/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/University-MobApp/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/University-MobApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/University-MobApp/index.html": "01445502dd30675251a20ab59c7b126e2d102f90",
+    "/University-MobApp/main.943aa056ad44db09.js": "9fbd313229120a39d81c811732d7abd4b86d2fb0",
+    "/University-MobApp/manifest.webmanifest": "cf60e76b1634ca9a5afa9281d560316309f99509",
+    "/University-MobApp/polyfills.942245ca16d97e7c.js": "86a2491036c9c5c183aaf088fe3854f91d0b3a89",
+    "/University-MobApp/runtime.cac85a30844ca736.js": "40ab9a8bc819919accb55f127e4784c31516d81f",
+    "/University-MobApp/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
