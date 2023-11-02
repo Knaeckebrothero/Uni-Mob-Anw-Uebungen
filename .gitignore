@@ -99,7 +99,6 @@ typings/
 .yarn-integrity
 
 # Compiled output
-/dist
 /tmp
 /out-tsc
 /bazel-out
@@ -127,7 +126,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+/.angular
 .sass-cache/
 /connect.lock
 /coverage
