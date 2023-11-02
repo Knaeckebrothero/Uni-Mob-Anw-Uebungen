@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1698945672393,
+  "timestamp": 1698945826789,
   "index": "/ai-assistant-frontend/index.html",
   "assetGroups": [
     {
@@ -88,7 +88,7 @@
     "/ai-assistant-frontend/assets/images/icons/icon-72x72.png": "54150aa415d6b5d640cdc5e1190e7a9eaae1ed91",
     "/ai-assistant-frontend/assets/images/icons/icon-96x96.png": "2dc1d2a68a0c5088d484d4056d007c6ff93e917f",
     "/ai-assistant-frontend/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ai-assistant-frontend/index.html": "7cf5dfe6bd09396b08c0a0868a37a28c588cf41f",
+    "/ai-assistant-frontend/index.html": "437a7d06c92f9d3f6efe59401247ee9112581b03",
     "/ai-assistant-frontend/main.0cb3ea0f010c3b9b.js": "9cd77fabd6e637b48facab08c56fb67d37a092ab",
     "/ai-assistant-frontend/manifest.webmanifest": "176e3a57457346a0b5e1eceb3b602f10fbc2f0db",
     "/ai-assistant-frontend/polyfills.cb2ef130a92ce664.js": "aa22918ee4ad2bdd018bccf8c531df5802b9eb4c",
