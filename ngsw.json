@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1698946105330,
-  "index": "/ai-assistant-frontend/index.html",
+  "timestamp": 1698948449861,
+  "index": "/University-MobApp/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,17 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "/ai-assistant-frontend/favicon.ico",
-        "/ai-assistant-frontend/index.html",
-        "/ai-assistant-frontend/main.2914716880c2eb22.js",
-        "/ai-assistant-frontend/manifest.webmanifest",
-        "/ai-assistant-frontend/polyfills.cb2ef130a92ce664.js",
-        "/ai-assistant-frontend/runtime.c281c635523518c6.js",
-        "/ai-assistant-frontend/styles.1b1b66ef5642772b.css"
+        "/University-MobApp/favicon.ico",
+        "/University-MobApp/index.html",
+        "/University-MobApp/main.943aa056ad44db09.js",
+        "/University-MobApp/manifest.webmanifest",
+        "/University-MobApp/polyfills.942245ca16d97e7c.js",
+        "/University-MobApp/runtime.cac85a30844ca736.js",
+        "/University-MobApp/styles.ef46db3751d8e999.css"
       ],
-      "patterns": [
-        "\\/images\\/.*"
-      ]
+      "patterns": []
     },
     {
       "name": "assets",
@@ -31,69 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "/ai-assistant-frontend/assets/icons/icon-128x128.png",
-        "/ai-assistant-frontend/assets/icons/icon-144x144.png",
-        "/ai-assistant-frontend/assets/icons/icon-152x152.png",
-        "/ai-assistant-frontend/assets/icons/icon-192x192.png",
-        "/ai-assistant-frontend/assets/icons/icon-384x384.png",
-        "/ai-assistant-frontend/assets/icons/icon-512x512.png",
-        "/ai-assistant-frontend/assets/icons/icon-72x72.png",
-        "/ai-assistant-frontend/assets/icons/icon-96x96.png",
-        "/ai-assistant-frontend/assets/images/coffee1.jpg",
-        "/ai-assistant-frontend/assets/images/coffee2.jpg",
-        "/ai-assistant-frontend/assets/images/coffee3.jpg",
-        "/ai-assistant-frontend/assets/images/coffee4.jpg",
-        "/ai-assistant-frontend/assets/images/coffee5.jpg",
-        "/ai-assistant-frontend/assets/images/coffee6.jpg",
-        "/ai-assistant-frontend/assets/images/coffee7.jpg",
-        "/ai-assistant-frontend/assets/images/coffee8.jpg",
-        "/ai-assistant-frontend/assets/images/coffee9.jpg",
-        "/ai-assistant-frontend/assets/images/icons/icon-128x128.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-144x144.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-152x152.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-192x192.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-384x384.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-512x512.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-72x72.png",
-        "/ai-assistant-frontend/assets/images/icons/icon-96x96.png"
+        "/University-MobApp/assets/icons/icon-128x128.png",
+        "/University-MobApp/assets/icons/icon-144x144.png",
+        "/University-MobApp/assets/icons/icon-152x152.png",
+        "/University-MobApp/assets/icons/icon-192x192.png",
+        "/University-MobApp/assets/icons/icon-384x384.png",
+        "/University-MobApp/assets/icons/icon-512x512.png",
+        "/University-MobApp/assets/icons/icon-72x72.png",
+        "/University-MobApp/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/ai-assistant-frontend/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
-    "/ai-assistant-frontend/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
-    "/ai-assistant-frontend/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
-    "/ai-assistant-frontend/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
-    "/ai-assistant-frontend/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/ai-assistant-frontend/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/ai-assistant-frontend/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
-    "/ai-assistant-frontend/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
-    "/ai-assistant-frontend/assets/images/coffee1.jpg": "59cd8b9a6b09a04fd3a976c57ac37fb66ea96089",
-    "/ai-assistant-frontend/assets/images/coffee2.jpg": "d0b10e9a9e8c6496645fae80ff254d972a2f7e10",
-    "/ai-assistant-frontend/assets/images/coffee3.jpg": "9895cda92ab2eb21319da3f740eb120ee9c4e81a",
-    "/ai-assistant-frontend/assets/images/coffee4.jpg": "4f783007b3aabf2d4e5ac50f9e54919c2773dc9d",
-    "/ai-assistant-frontend/assets/images/coffee5.jpg": "69ea524d86815502f5a07626a3325829a3f359c9",
-    "/ai-assistant-frontend/assets/images/coffee6.jpg": "2cd8a2104a086d4020632b2c04c848db93d3a24b",
-    "/ai-assistant-frontend/assets/images/coffee7.jpg": "163d71829ba139a5717562ce9e0e77bc299346d3",
-    "/ai-assistant-frontend/assets/images/coffee8.jpg": "5d9cc2fd144dbf71b276d3b88309162cb2b754c3",
-    "/ai-assistant-frontend/assets/images/coffee9.jpg": "171080420e688a1f503e197d564aab5d497a151e",
-    "/ai-assistant-frontend/assets/images/icons/icon-128x128.png": "ce161b2b761045ed79c310dd90ad3706177f8fda",
-    "/ai-assistant-frontend/assets/images/icons/icon-144x144.png": "97b8c7187729090ad0ef5db5e497c96461b32647",
-    "/ai-assistant-frontend/assets/images/icons/icon-152x152.png": "26c859983523715747801423e03d06a95c348355",
-    "/ai-assistant-frontend/assets/images/icons/icon-192x192.png": "322380acd75ceda72d23994b78d0026f2d7c0e51",
-    "/ai-assistant-frontend/assets/images/icons/icon-384x384.png": "1bc4fca90324cb3f57d1b71734988671e2ad4ae8",
-    "/ai-assistant-frontend/assets/images/icons/icon-512x512.png": "f6bc8dd488c7880a5723b0e7f2fc8d6268b77841",
-    "/ai-assistant-frontend/assets/images/icons/icon-72x72.png": "54150aa415d6b5d640cdc5e1190e7a9eaae1ed91",
-    "/ai-assistant-frontend/assets/images/icons/icon-96x96.png": "2dc1d2a68a0c5088d484d4056d007c6ff93e917f",
-    "/ai-assistant-frontend/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ai-assistant-frontend/index.html": "e7d35d5705a6e0a3dbb75a8b95844d0053df2111",
-    "/ai-assistant-frontend/main.2914716880c2eb22.js": "a6eba19be81a1b2b6f15b2d6f19f1b504dfe64ce",
-    "/ai-assistant-frontend/manifest.webmanifest": "176e3a57457346a0b5e1eceb3b602f10fbc2f0db",
-    "/ai-assistant-frontend/polyfills.cb2ef130a92ce664.js": "aa22918ee4ad2bdd018bccf8c531df5802b9eb4c",
-    "/ai-assistant-frontend/runtime.c281c635523518c6.js": "a8e2a840c6fe96f21a34309e6b9860302f4f26de",
-    "/ai-assistant-frontend/styles.1b1b66ef5642772b.css": "fef9e691f868c1db639b17beea1067df61192bfb"
+    "/University-MobApp/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/University-MobApp/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/University-MobApp/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/University-MobApp/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/University-MobApp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/University-MobApp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/University-MobApp/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/University-MobApp/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/University-MobApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/University-MobApp/index.html": "01445502dd30675251a20ab59c7b126e2d102f90",
+    "/University-MobApp/main.943aa056ad44db09.js": "9fbd313229120a39d81c811732d7abd4b86d2fb0",
+    "/University-MobApp/manifest.webmanifest": "cf60e76b1634ca9a5afa9281d560316309f99509",
+    "/University-MobApp/polyfills.942245ca16d97e7c.js": "86a2491036c9c5c183aaf088fe3854f91d0b3a89",
+    "/University-MobApp/runtime.cac85a30844ca736.js": "40ab9a8bc819919accb55f127e4784c31516d81f",
+    "/University-MobApp/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
