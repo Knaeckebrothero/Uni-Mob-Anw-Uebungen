@@ -30,3 +30,5 @@ jobs:
       with:
         branch: main
         folder: dist/mobanw
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        
