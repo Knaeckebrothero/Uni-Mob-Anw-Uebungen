@@ -1,0 +1,117 @@
+{
+  "configVersion": 1,
+  "timestamp": 1698940624749,
+  "index": "https://knaeckebrothero.github.io/University-MobApp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://knaeckebrothero.github.io/University-MobApp/favicon.ico",
+        "https://knaeckebrothero.github.io/University-MobApp/index.html",
+        "https://knaeckebrothero.github.io/University-MobApp/main.0cb3ea0f010c3b9b.js",
+        "https://knaeckebrothero.github.io/University-MobApp/manifest.webmanifest",
+        "https://knaeckebrothero.github.io/University-MobApp/polyfills.cb2ef130a92ce664.js",
+        "https://knaeckebrothero.github.io/University-MobApp/runtime.c281c635523518c6.js",
+        "https://knaeckebrothero.github.io/University-MobApp/styles.763a1feb92642ad3.css"
+      ],
+      "patterns": [
+        "\\/images\\/.*"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-128x128.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-144x144.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-152x152.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-192x192.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-384x384.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-512x512.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-72x72.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-96x96.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee1.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee2.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee3.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee4.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee5.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee6.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee7.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee8.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee9.jpg",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-128x128.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-144x144.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-152x152.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-192x192.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-384x384.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-512x512.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-72x72.png",
+        "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee1.jpg": "59cd8b9a6b09a04fd3a976c57ac37fb66ea96089",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee2.jpg": "d0b10e9a9e8c6496645fae80ff254d972a2f7e10",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee3.jpg": "9895cda92ab2eb21319da3f740eb120ee9c4e81a",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee4.jpg": "4f783007b3aabf2d4e5ac50f9e54919c2773dc9d",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee5.jpg": "69ea524d86815502f5a07626a3325829a3f359c9",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee6.jpg": "2cd8a2104a086d4020632b2c04c848db93d3a24b",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee7.jpg": "163d71829ba139a5717562ce9e0e77bc299346d3",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee8.jpg": "5d9cc2fd144dbf71b276d3b88309162cb2b754c3",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/coffee9.jpg": "171080420e688a1f503e197d564aab5d497a151e",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-128x128.png": "ce161b2b761045ed79c310dd90ad3706177f8fda",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-144x144.png": "97b8c7187729090ad0ef5db5e497c96461b32647",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-152x152.png": "26c859983523715747801423e03d06a95c348355",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-192x192.png": "322380acd75ceda72d23994b78d0026f2d7c0e51",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-384x384.png": "1bc4fca90324cb3f57d1b71734988671e2ad4ae8",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-512x512.png": "f6bc8dd488c7880a5723b0e7f2fc8d6268b77841",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-72x72.png": "54150aa415d6b5d640cdc5e1190e7a9eaae1ed91",
+    "https://knaeckebrothero.github.io/University-MobApp/assets/images/icons/icon-96x96.png": "2dc1d2a68a0c5088d484d4056d007c6ff93e917f",
+    "https://knaeckebrothero.github.io/University-MobApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://knaeckebrothero.github.io/University-MobApp/index.html": "203ff745867ac3f4885ed92a01318534aa552ecc",
+    "https://knaeckebrothero.github.io/University-MobApp/main.0cb3ea0f010c3b9b.js": "9cd77fabd6e637b48facab08c56fb67d37a092ab",
+    "https://knaeckebrothero.github.io/University-MobApp/manifest.webmanifest": "d895d12722b81138a81d19357da9e3524a4ac2f2",
+    "https://knaeckebrothero.github.io/University-MobApp/polyfills.cb2ef130a92ce664.js": "aa22918ee4ad2bdd018bccf8c531df5802b9eb4c",
+    "https://knaeckebrothero.github.io/University-MobApp/runtime.c281c635523518c6.js": "a8e2a840c6fe96f21a34309e6b9860302f4f26de",
+    "https://knaeckebrothero.github.io/University-MobApp/styles.763a1feb92642ad3.css": "661a97a3924c9706ae98dc114b8b1e32e5e34b53"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
