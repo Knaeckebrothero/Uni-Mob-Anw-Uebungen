@@ -1,7 +1,9 @@
 <div class="columns">
   <div class="column">
-    <p><button type="button" (click)="getStream('video')">Grab video</button></p>
+    <p><button type="button" (click)="getStream('video')">Record video</button></p>
     <video #videoElement controls autoplay style="height:180px; width: 240px;"></video>
+    <p><button type="button" (click)="stopRecording()">Stop Recording</button></p>  <!-- New button to stop recording -->
+    <video #recordedVideoElement controls style="height:180px; width: 240px;"></video>  <!-- New video element for playback -->
   </div>
   <div class="column">
     <p><button type="button" (click)="getStream('audio')">Grab audio</button></p>
