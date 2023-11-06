@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 declare var window: any;  // New line to suppress TypeScript errors when accessing window.indexedDB
 interface MediaConstraints {
@@ -10,11 +10,19 @@ interface MediaConstraints {
   templateUrl: './camera-microphone.component.html',
   styleUrls: ['./camera-microphone.component.scss']
 })
-export class CameraMicrophoneComponent {
+export class CameraMicrophoneComponent implements OnInit {
   
   @ViewChild('videoElement') videoElement!: ElementRef;
   @ViewChild('recordedVideoElement') recordedVideoElement!: ElementRef;  // New ViewChild for the recorded video element
   
+  constructor() {
+    // The constructor should only be used to inject dependencies
+  }
+
+  ngOnInit(): void {
+    this.loadVideo(); // Call loadVideo on component initialization
+  }
+
   mediaRecorder: MediaRecorder | null = null;  // New property to hold the MediaRecorder instance
   recordedBlobs: Blob[] = [];  // New property to hold the recorded video data
   db: IDBDatabase | null = null;  // New property to hold the IndexedDB database instance
