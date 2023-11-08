@@ -14,7 +14,12 @@ export class CameraMicrophoneComponent implements OnInit {
   
   @ViewChild('videoElement') videoElement!: ElementRef;
   @ViewChild('recordedVideoElement') recordedVideoElement!: ElementRef;  // New ViewChild for the recorded video element
-  
+
+  mediaRecorder: MediaRecorder | null = null;  // New property to hold the MediaRecorder instance
+  recordedBlobs: Blob[] = [];  // New property to hold the recorded video data
+  db: IDBDatabase | null = null;  // New property to hold the IndexedDB database instance
+  isRecording = false; // New property to track recording state
+
   constructor() {
     // The constructor should only be used to inject dependencies
   }
@@ -23,10 +28,14 @@ export class CameraMicrophoneComponent implements OnInit {
     this.loadVideo(); // Call loadVideo on component initialization
   }
 
-  mediaRecorder: MediaRecorder | null = null;  // New property to hold the MediaRecorder instance
-  recordedBlobs: Blob[] = [];  // New property to hold the recorded video data
-  db: IDBDatabase | null = null;  // New property to hold the IndexedDB database instance
-
+  toggleRecording() {
+    if (this.isRecording) {
+      this.stopRecording();
+    } else {
+      this.getStream({ video: true, audio: true }); // Start recording with video and audio
+    }
+  }
+  
   getUserMedia(constraints: MediaStreamConstraints): Promise<MediaStream> {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       return navigator.mediaDevices.getUserMedia(constraints);
@@ -35,14 +44,13 @@ export class CameraMicrophoneComponent implements OnInit {
     }
   }
 
-  getStream(type: string) {
+  getStream(constraints: MediaStreamConstraints) {
     if (!navigator.mediaDevices) {
       alert('User Media API not supported.');
       return;
     }
-    const constraints: MediaConstraints = {};
-    constraints[type] = true;
-    this.getUserMedia(constraints as MediaStreamConstraints)
+  
+    this.getUserMedia(constraints)
       .then(stream => {
         const mediaControl = this.videoElement.nativeElement;
         if ('srcObject' in mediaControl) {
@@ -51,19 +59,36 @@ export class CameraMicrophoneComponent implements OnInit {
           alert('Your browser does not support the srcObject property.');
         }
         mediaControl.play();
-        
-        this.mediaRecorder = new MediaRecorder(stream);  // Create a new MediaRecorder instance
-        this.mediaRecorder.ondataavailable = event => {  // Collect the recorded data
+  
+        // Setup for the MediaRecorder
+        this.mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp9,opus' });
+        this.mediaRecorder.ondataavailable = event => {
           if (event.data && event.data.size > 0) {
             this.recordedBlobs.push(event.data);
           }
         };
-        this.mediaRecorder.start();  // Start recording
+        this.mediaRecorder.onstop = () => {
+          // When recording stops, we create a new Blob from the data
+          const blob = new Blob(this.recordedBlobs, { type: 'video/webm' });
+          // Save the video to IndexedDB
+          this.saveVideo(blob);
+          // Clear the recorded blobs for any subsequent recordings
+          this.recordedBlobs = [];
+          // Set the recorded video's source to the blob for playback
+          const url = URL.createObjectURL(blob);
+          this.recordedVideoElement.nativeElement.src = url;
+        };
+  
+        // Start recording
+        this.mediaRecorder.start();
+        // Change the recording state
+        this.isRecording = true;
       })
       .catch(err => {
         alert('Error: ' + err);
       });
   }
+  
   
   stopRecording() {
     if (this.mediaRecorder) {
@@ -72,6 +97,7 @@ export class CameraMicrophoneComponent implements OnInit {
         const blob = new Blob(this.recordedBlobs, { type: 'video/webm' });  // Combine the recorded data into a single Blob
         this.saveVideo(blob);  // Save the recorded video to IndexedDB
       };
+      this.isRecording = false; // Update the recording state
     }
   }
 
