@@ -1,0 +1,10 @@
+<div *ngIf="navService.showSidenav$ | async" class="sidenav">
+    <mat-nav-list>
+        <mat-list-item (click)="navigate('/')">
+        <h3>Übung 2</h3>
+        </mat-list-item>
+        <mat-list-item (click)="navigate('/uebung3')">
+        <h3 matLine>Übung 3</h3>
+        </mat-list-item>
+    </mat-nav-list>
+</div>

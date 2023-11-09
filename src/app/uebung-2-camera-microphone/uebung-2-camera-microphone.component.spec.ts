@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CameraMicrophoneComponent } from './camera-microphone.component';
+import { CameraMicrophoneComponent } from './uebung-2-camera-microphone.component';
 
 describe('CameraMicrophoneComponent', () => {
   let component: CameraMicrophoneComponent;
