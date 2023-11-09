@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { Uebung3LocationComponent } from './uebung-3-location/uebung-3-location.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Uebung3LocationComponent
   ],
   imports: [
     BrowserModule,
