@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "University-MobApp": {
+    "pwa-hub": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/university-mob-app",
+            "outputPath": "dist/pwa-hub",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "University-MobApp:build:production"
+              "browserTarget": "pwa-hub:build:production"
             },
             "development": {
-              "browserTarget": "University-MobApp:build:development"
+              "browserTarget": "pwa-hub:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "University-MobApp:build"
+            "browserTarget": "pwa-hub:build"
           }
         },
         "test": {
@@ -106,6 +106,6 @@
     }
   },
   "cli": {
-    "analytics": "d40c15ac-2199-4112-8476-d071ef82eaf1"
+    "analytics": "c283da2a-1f33-491a-8180-3b3bd890097e"
   }
 }

@@ -1,0 +1,21 @@
+<div *ngIf="navService.showSidenav$ | async" class="sidenav">
+    <mat-nav-list>
+        <!-- Landingpage -->
+        <mat-list-item (click)="navigate('/')">
+        <h3>Home</h3>
+        </mat-list-item>
+        <!-- Uebung 1 -->
+        <mat-list-item (click)="navigate('/devs-hot-coffee')">
+        <h3 matLine>Dev's Hot Coffee</h3>
+        </mat-list-item>
+        <!-- Uebung 2 -->
+        <mat-list-item (click)="navigate('/amateur-pwas')">
+        <h3 matLine>Amateur Pwa Video's</h3>
+        </mat-list-item>
+        <!-- Uebung 2 -->
+        <mat-list-item (click)="navigate('/gps-positions')">
+        <h3 matLine>Favorite Gps Positions</h3>
+        </mat-list-item>
+        <!-- ... other links ... -->
+    </mat-nav-list>
+</div>

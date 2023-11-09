@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  background-color: $secondary-color; // Using the global black color
+  color: white;
+  font-family: 'Roboto', sans-serif; // Using the global font
+
+  mat-nav-list {
+    width: 100%;
+
+    mat-list-item {
+      cursor: pointer;
+      color: white; // List items text color
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 20px;
+
+      h3, .mat-line {
+        color: inherit;
+      }
+
+      &:hover {
+        background-color: darken($secondary-color, 5%); // Darken the item on hover
+      }
+    }
+  }
+}
