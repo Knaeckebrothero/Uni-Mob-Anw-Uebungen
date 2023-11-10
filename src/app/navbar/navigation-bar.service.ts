@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class NavigationBarService {
-  private showSidenavSource = new BehaviorSubject<boolean>(false);
+  private showSidenavSource = new BehaviorSubject<boolean>(true);
   showSidenav$ = this.showSidenavSource.asObservable();
 
   toggleSidenav() {

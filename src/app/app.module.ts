@@ -14,6 +14,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { DevsHotCoffeeComponent } from './devs-hot-coffee/devs-hot-coffee.component';
 import { AmateurPwasComponent } from './amateur-pwas/amateur-pwas.component';
 import { GpsPositionsComponent } from './gps-positions/gps-positions.component';
+import { HeadBarComponent } from './head-bar/head-bar.component';
 
 // Routes
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
     DevsHotCoffeeComponent,
     AmateurPwasComponent,
     GpsPositionsComponent,
+    HeadBarComponent,
   ],
   imports: [
     BrowserModule,

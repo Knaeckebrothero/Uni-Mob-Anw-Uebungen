@@ -1,45 +1,24 @@
 @use '@angular/material' as mat;
 @import 'variables';
 
-// Define a custom grey palette for black
-$custom-black-palette: mat.define-palette(mat.$grey-palette, 900);
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-$pwa-hub-primary: mat.define-palette(mat.$yellow-palette, 800); // Using yellow as the primary color
-$pwa-hub-accent: $custom-black-palette; // Using the custom black palette for accent
-$pwa-hub-warn: mat.define-palette(mat.$red-palette);
 
 // Define a typography config with a specific font
 $pwa-hub-typography: mat.define-typography-config(
   $font-family: 'Roboto, sans-serif'
 );
 
-// Create the theme object with the custom colors and typography
-$pwa-hub-theme: mat.define-light-theme((
-  color: (
-    primary: $pwa-hub-primary,
-    accent: $pwa-hub-accent,
-    warn: $pwa-hub-warn,
-  ),
-  typography: $pwa-hub-typography
-));
-
-// Include the core and theme styles for Angular Material components
-@include mat.core();
-@include mat.all-component-themes($pwa-hub-theme);
-
 // Global styles
-
-head{
+head {
   font-family: 'Roboto', sans-serif;
-  color: $background-color;
-  background-color: $secondary-color;
+  color: $font-color;
+  background-color: $background-color;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: $background-color;
-  background-color: $secondary-color;
+  color: $font-color;
+  background-color: $background-color;
 }
 
 a {
@@ -60,6 +39,7 @@ a {
   text-transform: uppercase;
 
   &:hover {
+    color: $primary-color;
     background-color: darken($bg-color, 10%);
   }
 }
@@ -67,10 +47,3 @@ a {
 .button {
   @include theme-button();
 }
-
-// Additional global styles can go here
-// ...
-
-// Import other stylesheets if necessary
-// @import 'components/buttons';
-// @import 'components/menus';
