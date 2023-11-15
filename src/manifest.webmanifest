@@ -1,6 +1,6 @@
 {
-  "name": "University-MobApp",
-  "short_name": "University-MobApp",
+  "name": "pwa-hub",
+  "short_name": "pwa-hub",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

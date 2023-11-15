@@ -1,0 +1,13 @@
+<div class="header">
+    <h1>Mobile Anwendungssysteme - WiSe 23/24</h1>
+    <p>This is an Angular PWA for getting hands on using Camera & Microphone in a web application.</p>
+  </div>
+  <div class="video-container">
+    <video #videoElement controls autoplay style="height:180px; width: 240px;"></video>
+    <p>Please click the button to start the recording.</p>
+    <button type="button" (click)="toggleRecording()">
+      {{ isRecording ? 'Stop Recording' : 'Start Recording' }}
+    </button>
+    <video #recordedVideoElement controls style="height:180px; width: 240px;"></video>
+  </div>
+  

@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.head{
+    height: 10vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: $secondary-color;
+
+    .spacer{
+        height: 1vh;
+        width: 100%;
+        background-color: $background-color;
+    }
+
+    .mat-icon{
+        position: absolute;
+        font-size: 400%;
+        height: auto;
+        width: auto;
+        left: 1%;
+        top: 2%;
+        color: $primary-color;
+        &:hover {
+            color: lighten($primary-color, 15%);
+        }
+    }
+
+    .logo {
+        position: absolute;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 200%;
+        left: 20%;
+        top: 3.3%;
+
+        span:nth-child(2) {
+            background: $primary-color;
+            color: $background-color;
+            border-radius: 3px;
+            padding: 1px 1px 1px 1px;
+            display: inline-block;
+        }
+      }
+}

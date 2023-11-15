@@ -3,36 +3,43 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { CameraMicrophoneComponent } from './uebung-2-camera-microphone/uebung-2-camera-microphone.component';
-import { Uebung3LocationComponent } from './uebung-3-location/uebung-3-location.component';
 
-// Navigation bar imports
+
 import { NavigationBarComponent } from './navbar/navigation-bar.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { DevsHotCoffeeComponent } from './devs-hot-coffee/devs-hot-coffee.component';
+import { AmateurPwasComponent } from './amateur-pwas/amateur-pwas.component';
+import { GpsPositionsComponent } from './gps-positions/gps-positions.component';
+import { HeadBarComponent } from './head-bar/head-bar.component';
 
-
-	// Routes
-	const routes: Routes = [
-	  { path: '', component: CameraMicrophoneComponent },
-	  { path: '/uebung3', component: Uebung3LocationComponent }
-	];
+// Routes
+const routes: Routes = [
+  { path: '', component: LandingpageComponent },
+  { path: 'devs-hot-coffee', component: DevsHotCoffeeComponent },
+  { path: 'amateur-pwas', component: AmateurPwasComponent },
+  { path: 'gps-positions', component: GpsPositionsComponent},
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    CameraMicrophoneComponent,
-    Uebung3LocationComponent,
+    LandingpageComponent,
+    DevsHotCoffeeComponent,
+    AmateurPwasComponent,
+    GpsPositionsComponent,
+    HeadBarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatListModule,
     MatIconModule,
-    RouterModule,
     RouterModule.forRoot(routes),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
