@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1698948449861,
+  "timestamp": 1700083207852,
   "index": "/University-MobApp/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/University-MobApp/favicon.ico",
         "/University-MobApp/index.html",
-        "/University-MobApp/main.943aa056ad44db09.js",
+        "/University-MobApp/main.f0497c7a6f16ffc8.js",
         "/University-MobApp/manifest.webmanifest",
-        "/University-MobApp/polyfills.942245ca16d97e7c.js",
-        "/University-MobApp/runtime.cac85a30844ca736.js",
-        "/University-MobApp/styles.ef46db3751d8e999.css"
+        "/University-MobApp/polyfills.f3f729f9e0fb860d.js",
+        "/University-MobApp/runtime.f432ac4d96cbeb31.js",
+        "/University-MobApp/styles.d720dd225161d9eb.css"
       ],
       "patterns": []
     },
@@ -52,12 +52,12 @@
     "/University-MobApp/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
     "/University-MobApp/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "/University-MobApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/University-MobApp/index.html": "01445502dd30675251a20ab59c7b126e2d102f90",
-    "/University-MobApp/main.943aa056ad44db09.js": "9fbd313229120a39d81c811732d7abd4b86d2fb0",
-    "/University-MobApp/manifest.webmanifest": "cf60e76b1634ca9a5afa9281d560316309f99509",
-    "/University-MobApp/polyfills.942245ca16d97e7c.js": "86a2491036c9c5c183aaf088fe3854f91d0b3a89",
-    "/University-MobApp/runtime.cac85a30844ca736.js": "40ab9a8bc819919accb55f127e4784c31516d81f",
-    "/University-MobApp/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/University-MobApp/index.html": "0ad663ec5b30fe02456aa4eddce57e66445ba930",
+    "/University-MobApp/main.f0497c7a6f16ffc8.js": "6dd7ce1dfa68ff9d121516bead7f04b43fceb191",
+    "/University-MobApp/manifest.webmanifest": "fa4e4f205ab4681343bff6b9c591a190c694e7b2",
+    "/University-MobApp/polyfills.f3f729f9e0fb860d.js": "454426a2d76ab06c5eb524e96052cc73caa9b773",
+    "/University-MobApp/runtime.f432ac4d96cbeb31.js": "3591dde8f5c8e1864526922a878857f378541789",
+    "/University-MobApp/styles.d720dd225161d9eb.css": "c340c52df497a1a122fe34b955ae7539df011701"
   },
   "navigationUrls": [
     {
