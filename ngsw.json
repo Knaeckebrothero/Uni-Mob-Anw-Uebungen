@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1700083207852,
+  "timestamp": 1700084299001,
   "index": "/University-MobApp/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/University-MobApp/manifest.webmanifest",
         "/University-MobApp/polyfills.f3f729f9e0fb860d.js",
         "/University-MobApp/runtime.f432ac4d96cbeb31.js",
-        "/University-MobApp/styles.d720dd225161d9eb.css"
+        "/University-MobApp/styles.0a1bd77271367e7c.css"
       ],
       "patterns": []
     },
@@ -52,12 +52,12 @@
     "/University-MobApp/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
     "/University-MobApp/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "/University-MobApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/University-MobApp/index.html": "0ad663ec5b30fe02456aa4eddce57e66445ba930",
+    "/University-MobApp/index.html": "21fd2803e5fec4147e77be39f97ca52a2abdbde8",
     "/University-MobApp/main.f0497c7a6f16ffc8.js": "6dd7ce1dfa68ff9d121516bead7f04b43fceb191",
     "/University-MobApp/manifest.webmanifest": "fa4e4f205ab4681343bff6b9c591a190c694e7b2",
     "/University-MobApp/polyfills.f3f729f9e0fb860d.js": "454426a2d76ab06c5eb524e96052cc73caa9b773",
     "/University-MobApp/runtime.f432ac4d96cbeb31.js": "3591dde8f5c8e1864526922a878857f378541789",
-    "/University-MobApp/styles.d720dd225161d9eb.css": "c340c52df497a1a122fe34b955ae7539df011701"
+    "/University-MobApp/styles.0a1bd77271367e7c.css": "3e8c1f7f1e00ca4644d76afbebe6e0fd69aebbb1"
   },
   "navigationUrls": [
     {
