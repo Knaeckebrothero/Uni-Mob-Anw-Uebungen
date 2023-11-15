@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GpsPositionsComponent } from './gps-positions.component';
 
 describe('GpsPositionsComponent', () => {

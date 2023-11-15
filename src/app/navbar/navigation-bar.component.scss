@@ -3,34 +3,33 @@
 .sidenav {
   position: fixed;
   height: auto;
-  width: 35%;
+  width: max-content;
   align-self: center;
   top: 12%;
   left: 1%;
   border-radius: 25px;
-
   z-index: 1;
   background-color: $secondary-color;
   color: white;
+}
 
-  mat-nav-list {
-    width: 100%;
+mat-nav-list {
+  width: 100%;
+}
 
-    mat-list-item {
-      cursor: pointer;
-      font-size: 100%;
-      line-height: 20%;
-      background-color: $tertiary-color;
-      height: 85%;
-      width: 90%;
-      border-radius: 12px;
-      margin: 1.7% auto;
-      align-items: center;
-
-      &:hover {
-        color: $primary-color;
-        background-color: lighten($secondary-color, 15%);
-      }
-    }
+mat-list-item {
+  cursor: pointer;
+  font-size: 100%;
+  line-height: normal;
+  background-color: $tertiary-color;
+  height: 50px;
+  width: calc(100% - 16px);
+  border-radius: 12px;
+  margin: 8px;
+  box-sizing: border-box;
+  
+  &:hover {
+    color: $primary-color;
+    background-color: lighten($secondary-color, 15%);
   }
 }

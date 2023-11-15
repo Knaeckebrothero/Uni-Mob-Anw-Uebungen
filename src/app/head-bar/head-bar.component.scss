@@ -1,44 +1,37 @@
 @import '../../variables';
 
 .head{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    margin: fill;
-    height: 11%;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
     z-index: 1;
     background-color: $secondary-color;
 
     .spacer{
-        height: 15%;
+        height: 1vh;
         width: 100%;
         background-color: $background-color;
     }
 
     .mat-icon{
-        font-size: 350%;
+        position: absolute;
+        font-size: 400%;
         height: auto;
         width: auto;
-        margin-top: 16px;
-        margin-left: 26px;
+        left: 1%;
+        top: 2%;
         color: $primary-color;
         &:hover {
-            color: lighten($primary-color, 10%);
+            color: lighten($primary-color, 15%);
         }
     }
 
     .logo {
-        display: block;
+        position: absolute;
         font-family: sans-serif;
         font-weight: bold;
-        font-size: 30px;
-        position: absolute;
-        top: 54%;
-        left: 50%;
-        margin-left: -420px;
-        transform: translate(-50%, -50%);
+        font-size: 200%;
+        left: 20%;
+        top: 3.3%;
 
         span:nth-child(2) {
             background: $primary-color;
