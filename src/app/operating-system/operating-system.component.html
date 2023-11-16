@@ -1,1 +1,6 @@
-<p>operating-system works!</p>
+<p>Estimated storage usage is <b>{{ usage }}</b> bytes.</p>
+<p>Estimated storage quota is <b>{{ quota }}</b> bytes.</p>
+<p>Estimated usage is <b>{{ percent }}</b>%.</p>
+<p>Persistent storage status is <b>{{ persisted }}</b>.</p>
+<p><button (click)="requestPersistence()">Request persistent storage</button></p>
+
