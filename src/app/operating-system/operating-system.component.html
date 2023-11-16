@@ -1,0 +1,49 @@
+<p>Estimated storage usage is <b>{{ usage }}</b> bytes.</p>
+<p>Estimated storage quota is <b>{{ quota }}</b> bytes.</p>
+<p>Estimated usage is <b>{{ percent }}</b>%.</p>
+<p>Persistent storage status is <b>{{ persisted }}</b>.</p>
+<p><button (click)="requestPersistence()">Request persistent storage</button></p>
+
+<br><br>
+<hr>
+<br><br>
+
+<div class="columns">
+  <div class="column">
+    <input type="file" (change)="readFiles($event)" multiple>
+    <p>Number of selected files: <b>{{ selectedFileCount }}</b></p>
+  </div>
+  <div class="column">
+    <button (click)="writeFile()">
+      Choose file to create or overwrite<br>(Native File System API)
+    </button>
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let fileInfo of fileInfos">
+    {{ fileInfo.name }}, {{ fileInfo.type }}, {{ fileInfo.size }} bytes, last modified {{ fileInfo.lastModified }}
+  </li>
+</ul>
+
+<br><br>
+<hr>
+<br><br>
+
+<p>
+  <label>Engine</label>
+</p>
+<div role="group">
+  <input type="radio" name="engine" (change)="selectEngine('localStorage')" [checked]="selectedEngine === 'localStorage'"/> Persistent Storage
+  <input type="radio" name="engine" (change)="selectEngine('sessionStorage')" [checked]="selectedEngine === 'sessionStorage'"/> Per-Session Storage
+</div>
+
+<p>
+  <label for="value">Value for <code>myKey</code></label>
+  <input type="text" [(ngModel)]="myKeyValue" (keyup)="updateKeyValue(myKeyValue)">
+</p>
+
+<p>Open the example in another tab and change the value there to see the synchronization via <code>storage</code> event.</p>
+<div>
+  <p *ngFor="let logEntry of storageLog">{{ logEntry }}</p>
+</div>
