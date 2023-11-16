@@ -4,3 +4,24 @@
 <p>Persistent storage status is <b>{{ persisted }}</b>.</p>
 <p><button (click)="requestPersistence()">Request persistent storage</button></p>
 
+<br><br>
+<hr>
+<br><br>
+
+<div class="columns">
+  <div class="column">
+    <input type="file" (change)="readFiles($event)" multiple>
+    <p>Number of selected files: <b>{{ selectedFileCount }}</b></p>
+  </div>
+  <div class="column">
+    <button (click)="writeFile()">
+      Choose file to create or overwrite<br>(Native File System API)
+    </button>
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let fileInfo of fileInfos">
+    {{ fileInfo.name }}, {{ fileInfo.type }}, {{ fileInfo.size }} bytes, last modified {{ fileInfo.lastModified }}
+  </li>
+</ul>
