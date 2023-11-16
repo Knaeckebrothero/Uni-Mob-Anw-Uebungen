@@ -25,3 +25,25 @@
     {{ fileInfo.name }}, {{ fileInfo.type }}, {{ fileInfo.size }} bytes, last modified {{ fileInfo.lastModified }}
   </li>
 </ul>
+
+<br><br>
+<hr>
+<br><br>
+
+<p>
+  <label>Engine</label>
+</p>
+<div role="group">
+  <input type="radio" name="engine" (change)="selectEngine('localStorage')" [checked]="selectedEngine === 'localStorage'"/> Persistent Storage
+  <input type="radio" name="engine" (change)="selectEngine('sessionStorage')" [checked]="selectedEngine === 'sessionStorage'"/> Per-Session Storage
+</div>
+
+<p>
+  <label for="value">Value for <code>myKey</code></label>
+  <input type="text" [(ngModel)]="myKeyValue" (keyup)="updateKeyValue(myKeyValue)">
+</p>
+
+<p>Open the example in another tab and change the value there to see the synchronization via <code>storage</code> event.</p>
+<div>
+  <p *ngFor="let logEntry of storageLog">{{ logEntry }}</p>
+</div>

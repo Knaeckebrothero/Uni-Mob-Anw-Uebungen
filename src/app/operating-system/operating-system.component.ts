@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 declare let window: CustomWindow;
 
@@ -11,19 +11,45 @@ interface CustomWindow extends Window {
   templateUrl: './operating-system.component.html',
   styleUrls: ['./operating-system.component.scss']
 })
-export class OperatingSystemComponent {
+export class OperatingSystemComponent implements OnInit {
   usage: number | string = 'unknown';
   quota: number | string = 'unknown';
   percent: number | string = 'unknown';
   persisted: string = 'unknown';
   selectedFileCount: number = 0;
   fileInfos: Array<{ name: string; type: string; size: number; lastModified: string }> = [];
+  selectedEngine: 'localStorage' | 'sessionStorage' = 'localStorage';
+  myKeyValue: string = '';
+  storageLog: string[] = [];
 
   constructor() {}
 
-  oninit() {
+  ngOnInit() {
     this.checkStorageEstimate();
     this.checkPersisted();
+    this.myKeyValue = window[this.selectedEngine].getItem('myKey') || '';
+    window.addEventListener('storage', this.onStorageChanged.bind(this));
+  }
+
+  selectEngine(engine: 'localStorage' | 'sessionStorage') {
+    this.selectedEngine = engine;
+    this.myKeyValue = window[this.selectedEngine].getItem('myKey') || '';
+  }
+
+  updateKeyValue(value: string) {
+    window[this.selectedEngine].setItem('myKey', value);
+    this.myKeyValue = value;
+  }
+
+  onStorageChanged(event: StorageEvent) {
+    const timeBadge = new Date().toTimeString().split(' ')[0];
+    const changeMessage = `${timeBadge} External change in ${event.storageArea === window.localStorage ? 'localStorage' : 'sessionStorage'}: key ${event.key} changed from ${event.oldValue} to ${event.newValue}.`;
+    this.storageLog.push(changeMessage);
+
+    if ((event.storageArea === window.localStorage && this.selectedEngine === 'localStorage') ||
+        (event.storageArea === window.sessionStorage && this.selectedEngine === 'sessionStorage')) {
+      this.myKeyValue = window[this.selectedEngine].getItem('myKey') || '';
+    }
   }
 
   readFiles(event: Event) {
