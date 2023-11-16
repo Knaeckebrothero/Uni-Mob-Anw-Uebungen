@@ -15,6 +15,7 @@ import { DevsHotCoffeeComponent } from './devs-hot-coffee/devs-hot-coffee.compon
 import { AmateurPwasComponent } from './amateur-pwas/amateur-pwas.component';
 import { GpsPositionsComponent } from './gps-positions/gps-positions.component';
 import { HeadBarComponent } from './head-bar/head-bar.component';
+import { OperatingSystemComponent } from './operating-system/operating-system.component';
 
 // Routes
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'devs-hot-coffee', component: DevsHotCoffeeComponent },
   { path: 'amateur-pwas', component: AmateurPwasComponent },
   { path: 'gps-positions', component: GpsPositionsComponent},
+  { path: 'operating-system', component: OperatingSystemComponent},
   { path: '**', redirectTo: '' }
 ];
 
@@ -34,6 +36,7 @@ const routes: Routes = [
     AmateurPwasComponent,
     GpsPositionsComponent,
     HeadBarComponent,
+    OperatingSystemComponent,
   ],
   imports: [
     BrowserModule,
