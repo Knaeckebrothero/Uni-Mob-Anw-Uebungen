@@ -3,3 +3,22 @@
 <p><button (click)="requestPermission()">Request permission</button></p>
 <p><button (click)="nonPersistentNotification()">Non-persistent notification</button></p>
 <p><button (click)="persistentNotification()">Persistent notification</button></p>
+
+<br><br>
+<hr>
+<br><br>
+
+<div *ngFor="let permission of permissionStatuses | keyvalue">
+    <p>
+      <b>{{ permission.key }}</b> permission status is <b>{{ permission.value }}</b>.
+      <button *ngIf="permission.key === 'geolocation'" (click)="requestGeolocation()">Request</button>
+      <!-- Add buttons for other permissions similarly -->
+    </p>
+  </div>
+
+<br><br>
+<hr>
+<br><br>
+
+<p><button (click)="subscribeToPush()">Subscribe to Push Messages</button></p>
+<p><button (click)="checkPushSubscription()">Check Push Subscription</button></p>
