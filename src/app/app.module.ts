@@ -15,6 +15,7 @@ import { AmateurPwasComponent } from './amateur-pwas/amateur-pwas.component';
 import { GpsPositionsComponent } from './gps-positions/gps-positions.component';
 import { HeadBarComponent } from './head-bar/head-bar.component';
 import { OperatingSystemComponent } from './operating-system/operating-system.component';
+import { NativeBehaviorsComponent } from './native-behaviors/native-behaviors.component';
 
 // Routes
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'amateur-pwas', component: AmateurPwasComponent },
   { path: 'gps-positions', component: GpsPositionsComponent},
   { path: 'operating-system', component: OperatingSystemComponent},
+  { path: 'native-behaviors', component: NativeBehaviorsComponent},
   { path: '**', redirectTo: '' }
 ];
 
@@ -36,6 +38,7 @@ const routes: Routes = [
     GpsPositionsComponent,
     HeadBarComponent,
     OperatingSystemComponent,
+    NativeBehaviorsComponent,
   ],
   imports: [
     BrowserModule,
