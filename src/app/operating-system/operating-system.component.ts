@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// Declare a custom window interface
 declare let window: CustomWindow;
-
 interface CustomWindow extends Window {
   chooseFileSystemEntries: (options: any) => Promise<any>;
 }
@@ -12,6 +12,8 @@ interface CustomWindow extends Window {
   styleUrls: ['./operating-system.component.scss']
 })
 export class OperatingSystemComponent implements OnInit {
+  
+  // Variable declaration
   usage: number | string = 'unknown';
   quota: number | string = 'unknown';
   percent: number | string = 'unknown';
@@ -24,23 +26,32 @@ export class OperatingSystemComponent implements OnInit {
 
   constructor() {}
 
+  // On Init mehtod to inizialize and display the different values
   ngOnInit() {
+    // Use the StorageManager API to check if the storage is persisted and the usage and quota
     this.checkStorageEstimate();
     this.checkPersisted();
+
+    // Use the selected storage engine to read the value or set it to an empty string if it doesn't exist
     this.myKeyValue = window[this.selectedEngine].getItem('myKey') || '';
+
+    // Add a listener to the storage event to react to changes in other tabs/windows and update the value
     window.addEventListener('storage', this.onStorageChanged.bind(this));
   }
 
+  // Method to select the storage engine via a radio button in the html
   selectEngine(engine: 'localStorage' | 'sessionStorage') {
     this.selectedEngine = engine;
     this.myKeyValue = window[this.selectedEngine].getItem('myKey') || '';
   }
 
+  // Method to update the value of the selected storage engine via a text input in the html
   updateKeyValue(value: string) {
     window[this.selectedEngine].setItem('myKey', value);
     this.myKeyValue = value;
   }
 
+  // 
   onStorageChanged(event: StorageEvent) {
     const timeBadge = new Date().toTimeString().split(' ')[0];
     const changeMessage = `${timeBadge} External change in ${event.storageArea === window.localStorage ? 'localStorage' : 'sessionStorage'}: key ${event.key} changed from ${event.oldValue} to ${event.newValue}.`;
