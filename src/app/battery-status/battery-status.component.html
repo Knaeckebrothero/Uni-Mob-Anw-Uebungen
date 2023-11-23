@@ -1,0 +1,12 @@
+<h3>Battery Status</h3>
+<div class="battery-bar-outer">
+    <div class="battery-bar-inner" [style.width]="batteryLevelBar"></div>
+  </div>
+    <p>Battery Level: {{ batteryLevel }}%</p>
+  
+
+<p>Initial battery status was <b>{{ chargingStatus }}</b>, charging time <b>{{ chargingTime }}</b>, discharging time <b>{{ dischargingTime }}</b>, level <b>{{ batteryLevel }}</b>.</p>
+
+<div>
+  <p *ngFor="let update of batteryUpdates">{{ update }}</p>
+</div>
