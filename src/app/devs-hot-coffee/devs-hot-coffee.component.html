@@ -1,1 +1,7 @@
-<p>Devs-hot-coffee has been sued because the cup did not state how hot the contents actually were!</p>
+<div class="container">
+  <div *ngFor="let coffee of coffees" class="card">
+    <img class="card--avatar" [src]="coffee.image" />
+    <h1 class="card--title">{{coffee.name}}</h1>
+    <a class="card--link" href="#">Taste</a>
+  </div>
+</div>
