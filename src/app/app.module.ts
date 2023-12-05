@@ -17,6 +17,7 @@ import { HeadBarComponent } from './head-bar/head-bar.component';
 import { OperatingSystemComponent } from './operating-system/operating-system.component';
 import { NativeBehaviorsComponent } from './native-behaviors/native-behaviors.component';
 import { BatteryStatusComponent } from './battery-status/battery-status.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 // Routes
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'operating-system', component: OperatingSystemComponent},
   { path: 'native-behaviors', component: NativeBehaviorsComponent},
   { path: 'battery-status', component: BatteryStatusComponent},
+  { path: 'inventory', component: InventoryComponent},
   { path: '**', redirectTo: '' }
 ];
 
@@ -42,6 +44,7 @@ const routes: Routes = [
     OperatingSystemComponent,
     NativeBehaviorsComponent,
     BatteryStatusComponent,
+    InventoryComponent,
   ],
   imports: [
     BrowserModule,
