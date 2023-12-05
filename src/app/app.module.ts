@@ -18,6 +18,10 @@ import { OperatingSystemComponent } from './operating-system/operating-system.co
 import { NativeBehaviorsComponent } from './native-behaviors/native-behaviors.component';
 import { BatteryStatusComponent } from './battery-status/battery-status.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
 
 // Routes
 const routes: Routes = [
@@ -52,6 +56,10 @@ const routes: Routes = [
     MatListModule,
     MatIconModule,
     FormsModule,
+    MatTabsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatTableModule,
     RouterModule.forRoot(routes),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { openDB, IDBPDatabase, DBSchema } from 'idb';
 import './inventory-transaction-interface';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 interface MyDB extends DBSchema {
   transactions: {
@@ -14,9 +15,14 @@ interface MyDB extends DBSchema {
 })
 export class InventoryDbService {
   private db!: IDBPDatabase<MyDB>;
+  private dbInitialized = new BehaviorSubject(false);
 
   constructor() {
-    this.initDB();
+    this.initDB().then(() => this.dbInitialized.next(true));
+  }
+
+  isDbInitialized(): Observable<boolean> {
+    return this.dbInitialized.asObservable();
   }
 
   async initDB() {
