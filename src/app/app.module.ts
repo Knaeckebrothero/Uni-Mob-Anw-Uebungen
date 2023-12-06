@@ -36,6 +36,7 @@ const routes: Routes = [
   { path: '**', redirectTo: '' }
 ];
 
+// Component and service declarations
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ const routes: Routes = [
     BatteryStatusComponent,
     InventoryComponent,
   ],
+  // Module imports
   imports: [
     BrowserModule,
     AppRoutingModule,
