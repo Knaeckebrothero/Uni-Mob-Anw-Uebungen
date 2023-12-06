@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   
   // Component properties
   title = 'pwa-hub';
-  serviceWorkerVersion: string = '#0000';
+  serviceWorkerVersion: string = '0.0.0';
 
   // Constructor
   constructor(private swUpdate: SwUpdate, private cdr: ChangeDetectorRef) {}
