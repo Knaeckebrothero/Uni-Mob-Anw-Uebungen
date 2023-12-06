@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef  } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
 
 @Component({
@@ -6,16 +6,16 @@ import { SwUpdate } from '@angular/service-worker';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   
   // Component properties
   title = 'pwa-hub';
-  serviceWorkerVersion: string;
+  serviceWorkerVersion: string = '0.0.0';
 
   // Constructor
-  constructor(private swUpdate: SwUpdate) {}
+  constructor(private swUpdate: SwUpdate, private cdr: ChangeDetectorRef) {}
 
-  // Initialization feteches the app version from the service worker
+  // Initialization fetches the app version from the service worker
   ngOnInit() {
     if (this.swUpdate.isEnabled) {
       this.swUpdate.versionUpdates.subscribe((event) => {
@@ -25,22 +25,35 @@ export class AppComponent implements OnInit{
         }
       });
 
-      // Fetch the app version from the service worker
-      this.fetchAppVersion();
+      this.registerServiceWorker();
     }
   }
 
-  fetchAppVersion() {
-    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-      navigator.serviceWorker.controller.postMessage('GET_VERSION');
-      navigator.serviceWorker.addEventListener('message', (event) => {
-        console.log('Current app version:', event.data.version);
+  registerServiceWorker() {
+    navigator.serviceWorker.ready.then((registration) => {
+      this.postMessageToServiceWorker(registration);
+      
+      // If the service worker changes (i.e., new worker has just become active)
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        console.log('New service worker is active.');
+        this.postMessageToServiceWorker(registration);
       });
-    }
+
+      // Listen for messages from the service worker
+      navigator.serviceWorker.addEventListener('message', (event) => {
+        this.serviceWorkerVersion = event.data.version.appData.version;
+        console.log('Current app version:', event.data.version);
+        this.cdr.detectChanges();
+      });
+    });
   }
 
-  // Optional: Update to the latest version
-  updateToLatest() {
-    this.swUpdate.activateUpdate().then(() => document.location.reload());
+  postMessageToServiceWorker(registration: ServiceWorkerRegistration) {
+    // Ensure we have an active service worker to post messages to
+    if (registration.active) {
+      registration.active.postMessage('GET_VERSION');
+    } else {
+      console.log('Waiting for service worker to become active.');
+    }
   }
 }
