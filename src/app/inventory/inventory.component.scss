@@ -1,0 +1,76 @@
+@import '../../variables';
+
+// Apply the typography styles globally
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Styling for the mat-tab-group
+mat-tab-group {
+  background-color: $background-color;
+  color: $font-color;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+// Tab content
+.mat-tab-content {
+  padding: 20px;
+  background-color: lighten($background-color, 5%);
+  border-radius: 5px;
+}
+
+// Tables
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: $tertiary-color;
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid darken($background-color, 10%);
+    color: $font-color;
+  }
+
+  th {
+    background-color: lighten($primary-color, 10%);
+    color: $font-color;
+  }
+}
+
+// Form fields styling
+.order-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: lighten($background-color, 5%);
+  border-radius: 5px;
+
+  mat-form-field {
+    background-color: $tertiary-color;
+    border-radius: 4px;
+  }
+}
+
+// Specific styling for the user-money component
+.user-money {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: $secondary-color;
+  color: $font-color;
+  border-radius: 4px;
+  text-align: center;
+}
+
+// Adjustments to ensure visibility and contrast
+$background-color: #121212; // Dark background for better contrast
+$font-color: #ffffff; // White font for better readability
+
+// Add this if you want to ensure your components take the full viewport height
+.mat-tab-group {
+  min-height: 100vh;
+}

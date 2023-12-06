@@ -17,6 +17,11 @@ import { HeadBarComponent } from './head-bar/head-bar.component';
 import { OperatingSystemComponent } from './operating-system/operating-system.component';
 import { NativeBehaviorsComponent } from './native-behaviors/native-behaviors.component';
 import { BatteryStatusComponent } from './battery-status/battery-status.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
 
 // Routes
 const routes: Routes = [
@@ -27,9 +32,11 @@ const routes: Routes = [
   { path: 'operating-system', component: OperatingSystemComponent},
   { path: 'native-behaviors', component: NativeBehaviorsComponent},
   { path: 'battery-status', component: BatteryStatusComponent},
+  { path: 'inventory', component: InventoryComponent},
   { path: '**', redirectTo: '' }
 ];
 
+// Component and service declarations
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,16 +49,22 @@ const routes: Routes = [
     OperatingSystemComponent,
     NativeBehaviorsComponent,
     BatteryStatusComponent,
+    InventoryComponent,
   ],
+  // Module imports
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatListModule,
     MatIconModule,
     FormsModule,
+    MatTabsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatTableModule,
     RouterModule.forRoot(routes),
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
+      //enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'

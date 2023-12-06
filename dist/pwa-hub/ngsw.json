@@ -1,0 +1,109 @@
+{
+  "configVersion": 1,
+  "timestamp": 1701845840537,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.e3c09435bbe3301a.js",
+        "/manifest.webmanifest",
+        "/polyfills.f3f729f9e0fb860d.js",
+        "/runtime.f432ac4d96cbeb31.js",
+        "/styles.0a1bd77271367e7c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/coffee1.jpg",
+        "/assets/images/coffee2.jpg",
+        "/assets/images/coffee3.jpg",
+        "/assets/images/coffee4.jpg",
+        "/assets/images/coffee5.jpg",
+        "/assets/images/coffee6.jpg",
+        "/assets/images/coffee7.jpg",
+        "/assets/images/coffee8.jpg",
+        "/assets/images/coffee9.jpg"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "images",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/images/coffee1.jpg": "59cd8b9a6b09a04fd3a976c57ac37fb66ea96089",
+    "/assets/images/coffee2.jpg": "d0b10e9a9e8c6496645fae80ff254d972a2f7e10",
+    "/assets/images/coffee3.jpg": "9895cda92ab2eb21319da3f740eb120ee9c4e81a",
+    "/assets/images/coffee4.jpg": "4f783007b3aabf2d4e5ac50f9e54919c2773dc9d",
+    "/assets/images/coffee5.jpg": "69ea524d86815502f5a07626a3325829a3f359c9",
+    "/assets/images/coffee6.jpg": "2cd8a2104a086d4020632b2c04c848db93d3a24b",
+    "/assets/images/coffee7.jpg": "163d71829ba139a5717562ce9e0e77bc299346d3",
+    "/assets/images/coffee8.jpg": "5d9cc2fd144dbf71b276d3b88309162cb2b754c3",
+    "/assets/images/coffee9.jpg": "171080420e688a1f503e197d564aab5d497a151e",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "4d7794464643c45ad317a38e8969766a412319a7",
+    "/main.e3c09435bbe3301a.js": "4dac0b735efdaf87ffe52d74ce3efe7e7ff13211",
+    "/manifest.webmanifest": "911f6d7d16d3552c7a87903100eb6e0d2183a12d",
+    "/polyfills.f3f729f9e0fb860d.js": "454426a2d76ab06c5eb524e96052cc73caa9b773",
+    "/runtime.f432ac4d96cbeb31.js": "3591dde8f5c8e1864526922a878857f378541789",
+    "/styles.0a1bd77271367e7c.css": "3e8c1f7f1e00ca4644d76afbebe6e0fd69aebbb1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
