@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+  }
+  .kanban-column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid $tertiary-color;
+    border-radius: 4px;
+    background-color: $tertiary-color;
+    margin: 0 10px;
+  }
+  .kanban-item {
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    background-color: $primary-color;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  

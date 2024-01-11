@@ -18,10 +18,12 @@ import { OperatingSystemComponent } from './operating-system/operating-system.co
 import { NativeBehaviorsComponent } from './native-behaviors/native-behaviors.component';
 import { BatteryStatusComponent } from './battery-status/battery-status.component';
 import { InventoryComponent } from './inventory/inventory.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatInputModule} from '@angular/material/input';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 // Routes
 const routes: Routes = [
@@ -33,7 +35,7 @@ const routes: Routes = [
   { path: 'native-behaviors', component: NativeBehaviorsComponent},
   { path: 'battery-status', component: BatteryStatusComponent},
   { path: 'inventory', component: InventoryComponent},
-  { path: '**', redirectTo: '' }
+  { path: 'kanban', component: KanbanBoardComponent}
 ];
 
 // Component and service declarations
@@ -50,6 +52,7 @@ const routes: Routes = [
     NativeBehaviorsComponent,
     BatteryStatusComponent,
     InventoryComponent,
+    KanbanBoardComponent,
   ],
   // Module imports
   imports: [
@@ -62,12 +65,13 @@ const routes: Routes = [
     MatInputModule,
     ReactiveFormsModule,
     MatTableModule,
+    DragDropModule,
     RouterModule.forRoot(routes),
     ServiceWorkerModule.register('ngsw-worker.js', {
-      //enabled: !isDevMode(),
+    enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: '30000' //registerWhenStable:
     }),
     BrowserAnimationsModule
   ],

@@ -1,0 +1,13 @@
+<div class="kanban-board">
+    <div class="kanban-column" *ngFor="let category of categories; let i = index" 
+         [id]="'column-' + i"
+         cdkDropList 
+         [cdkDropListData]="category.tasks" 
+         [cdkDropListConnectedTo]="getConnectedListIds(i)" 
+         class="kanban-drop-list" 
+         (cdkDropListDropped)="drop($event)">
+      <h3>{{category.title}}</h3>
+      <div class="kanban-item" *ngFor="let item of category.tasks" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+  
