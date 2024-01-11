@@ -70,8 +70,8 @@ const routes: Routes = [
     ServiceWorkerModule.register('ngsw-worker.js', {
       //enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: '30000:registerWhenStable'
+      // or after 1 minute (whichever comes first).
+      registrationStrategy: 'registerWhenStable:60000'
     }),
     BrowserAnimationsModule
   ],

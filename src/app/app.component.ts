@@ -9,7 +9,7 @@ import { SwUpdate } from '@angular/service-worker';
 export class AppComponent implements OnInit {
   // Component properties
   title = 'pwa-hub';
-  serviceWorkerVersion: string = '0.0.0';
+  serviceWorkerVersion: string = 'loading...';
 
   // Constructor
   constructor(private swUpdate: SwUpdate, private cdr: ChangeDetectorRef) {}
