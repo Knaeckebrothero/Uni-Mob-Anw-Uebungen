@@ -1,12 +1,18 @@
 <div class="kanban-board">
+    <!-- First we use ngFor loop to display the horizontal columns stated in the categories array. -->
+    <!-- We use the index of the loop to create a unique id for each column. -->
+    <!-- Then we make the columns a drop list using the cdkDropList directive, see angular material drag&drop. -->
+    <!-- After this we pass the data of the column to the drop list. -->
     <div class="kanban-column" *ngFor="let category of categories; let i = index" 
          [id]="'column-' + i"
-         cdkDropList 
+         cdkDropList
          [cdkDropListData]="category.tasks" 
          [cdkDropListConnectedTo]="getConnectedListIds(i)" 
          class="kanban-drop-list" 
          (cdkDropListDropped)="drop($event)">
-      <h3>{{category.title}}</h3>
+        <!-- Here we are using the title as the header for each column. -->
+        <h3>{{category.title}}</h3>
+        <!-- Then we use another ngFor loop to display the tasks for each column. -->
       <div class="kanban-item" *ngFor="let item of category.tasks" cdkDrag>{{item}}</div>
     </div>
   </div>

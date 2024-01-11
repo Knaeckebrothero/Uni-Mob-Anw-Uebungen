@@ -68,10 +68,10 @@ const routes: Routes = [
     DragDropModule,
     RouterModule.forRoot(routes),
     ServiceWorkerModule.register('ngsw-worker.js', {
-    enabled: !isDevMode(),
+      //enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: '30000' //registerWhenStable:
+      registrationStrategy: '30000:registerWhenStable'
     }),
     BrowserAnimationsModule
   ],
