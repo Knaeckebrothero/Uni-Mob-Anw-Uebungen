@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+// We use flexbox to display the columns side by side and justify to space them out evenly.
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+  }
+  // Here we style the columns
+  .kanban-column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid $tertiary-color;
+    border-radius: 4px;
+    background-color: $tertiary-color;
+    margin: 0 10px;
+  }
+  // Here we style the items
+  .kanban-item {
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    background-color: $primary-color;
+    margin-bottom: 10px;
+    // We use the cursor property to change the mouse cursor to a pointer when hovering over the item
+    cursor: pointer;
+  }
+  
